@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>उम्र ज्ञात करें</title>
+</head>
+<body>
+    <h1>उम्र ज्ञात करें</h1>
+    <form method="POST">
+        <label>जन्म तिथि चुनें:</label>
+        <input type="date" name="dob" required>
+        <button type="submit">गणना करें</button>
+    </form>
+
+    {% if age is not none %}
+    <h2>आपकी उम्र है: {{ age }} वर्ष</h2>
+    {% endif %}
+</body>
+</html>
